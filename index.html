@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <form action="" class="form" id="form">
+        <h1 class="heading">Registration</h1>
+        <div class="container">
+            <input class="input1" name="userName" id="userName" minlength="3" maxlength="10" type="text"
+                placeholder="First Name" required>
+            <input class="input1" name="userSecondName" id="userSecondName" minlength="3" maxlength="15" type="text"
+                placeholder="Last Name" required>
+        </div>
+        <input class="input" type="email" id="userEmail" name="userEmail" placeholder="Email" required>
+        <input class="input" type="number" id="userPhNum" name="userPhNum" placeholder="Phone Number" minlength="7"
+            required>
+        <div class="container">
+            <input class="input1" name="country" id="userCountry" type="text" placeholder="Country" required>
+            <input class="input1" name="city" id="userCity" type="text" placeholder="City" required>
+        </div>
+        <div class="container1">
+            <h3 class="heading1">Gender:</h3>
+            <input style="position: absolute; bottom: 38px; left: 120px;" name="gender" type="checkbox" required>
+            <input style="position: absolute; bottom: 10px; left: 120px;" name="gender" type="checkbox">
+        </div>
+        <input class="input" id="userPassword" name="userPassword" type="password" placeholder="Password" minlength="8"
+            required>
+        <input class="input" id="userConfPass" name="userConfPass" type="password" placeholder="Confirm Password"
+            minlength="8" required>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <ul id="box" class="box">
+
+    </ul>
+
+    <button class="btn1" onclick="myFunction()">Dark Mode</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
